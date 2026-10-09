@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/part3.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<title>Events, Gallery and Location | Your Organisation</title>
+<meta name="description" content="Browse and search our upcoming events, view our photo gallery and find our office on the map.">
+</head><body>
+<header><nav><a href="index.html">Home</a> <a href="services.html">Services</a> <a href="enquiry.html">Enquiry</a> <a href="contact.html">Contact</a></nav></header>
+<main><h1>Events, Gallery and Location</h1>
+<section><h2>Frequently Asked Questions</h2>
+<button class="accordion-btn">How can I volunteer?</button><div class="accordion-panel"><p>Submit an enquiry and choose Volunteering.</p></div>
+<button class="accordion-btn">Are events free?</button><div class="accordion-panel"><p>Most are free; some have a small fee.</p></div></section>
+<section><h2>Upcoming Events</h2>
+<div class="toolbar"><input id="search" type="search" placeholder="Search events" aria-label="Search events"><select id="filter" aria-label="Filter by category"><option value="">All categories</option></select>
+<select id="sort" aria-label="Sort events"><option value="date">Date</option><option value="az">A-Z</option><option value="price">Price</option></select></div>
+<div id="eventCards" class="cards"></div></section>
+<section><h2>Gallery</h2><div class="gallery">
+<img src="images/community-event-1.jpg" alt="Volunteers at a community event">
+<img src="images/food-drive-2.jpg" alt="Food parcels ready for collection">
+<img src="images/youth-workshop-3.jpg" alt="Youth workshop in progress">
+<img src="images/fun-run-4.jpg" alt="Participants at the charity fun run"></div></section>
+<section><h2>Find Us</h2><div id="map" role="region" aria-label="Map showing our office"></div></section></main>
+<div id="lightbox" role="dialog" aria-label="Image viewer"><button id="lb-close" aria-label="Close">&times;</button><button id="lb-prev" aria-label="Previous">&#8249;</button><img src="" alt=""><button id="lb-next" aria-label="Next">&#8250;</button></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="js/main.js"></script></body></html>

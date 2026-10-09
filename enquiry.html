@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/part3.css">
+<title>Enquiry | Your Organisation, South Africa</title>
+<meta name="description" content="Enquire about our services, products, volunteering or sponsorship and get an instant answer on cost and availability.">
+</head><body>
+<header><nav><a href="index.html">Home</a> <a href="about.html">About</a> <a href="services.html">Services</a> <a href="enquiry.html">Enquiry</a> <a href="contact.html">Contact</a></nav></header>
+<main><h1>Make an Enquiry</h1>
+<form id="enquiryForm" action="https://formspree.io/f/YOUR_FORM_ID" method="post" novalidate>
+<div class="field"><label for="name">Full name</label><input id="name" name="name" data-rule="name" required minlength="2" maxlength="50"><span class="error" aria-live="polite"></span></div>
+<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" data-rule="email" required><span class="error" aria-live="polite"></span></div>
+<div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" data-rule="phone" placeholder="0821234567" required><span class="error" aria-live="polite"></span></div>
+<div class="field"><label for="type">I am enquiring about</label><select id="type" name="type" data-rule="select" required><option value="">-- choose --</option><option value="service">A service</option><option value="product">A product</option><option value="volunteer">Volunteering</option><option value="sponsor">Sponsorship</option></select><span class="error" aria-live="polite"></span></div>
+<div class="field"><label for="people">Number of people / items</label><input id="people" name="people" type="number" min="1" max="100" value="1"></div>
+<div class="field"><label for="date">Preferred date</label><input id="date" name="date" type="date" data-rule="date" required><span class="error" aria-live="polite"></span></div>
+<div class="field"><label for="message">Your enquiry</label><textarea id="message" name="message" rows="4" data-rule="message" maxlength="500" required></textarea><span class="error" aria-live="polite"></span></div>
+<button class="btn" type="submit">Submit Enquiry</button></form>
+<div id="response" class="response" hidden aria-live="polite"></div></main>
+<script src="js/main.js"></script></body></html>

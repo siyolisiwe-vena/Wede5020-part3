@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/part3.css">
+<title>Contact Us | Your Organisation, South Africa</title>
+<meta name="description" content="Send a general message to Your Organisation. Share your contact details, choose a message type and write to us.">
+</head><body>
+<header><nav><a href="index.html">Home</a> <a href="about.html">About</a> <a href="services.html">Services</a> <a href="enquiry.html">Enquiry</a> <a href="contact.html">Contact</a></nav></header>
+<main><h1>Contact Us</h1>
+<form id="contactForm" action="mailto:info@yourorganisation.org" method="post" enctype="text/plain" novalidate>
+<div class="field"><label for="cname">Name</label><input id="cname" name="name" data-rule="name" required><span class="error" aria-live="polite"></span></div>
+<div class="field"><label for="cemail">Email</label><input id="cemail" name="email" type="email" data-rule="email" required><span class="error" aria-live="polite"></span></div>
+<div class="field"><label for="cphone">Phone</label><input id="cphone" name="phone" type="tel" data-rule="phone" required><span class="error" aria-live="polite"></span></div>
+<div class="field"><label for="ctype">Message type</label><select id="ctype" name="type" data-rule="select" required><option value="">-- choose --</option><option>General feedback</option><option>Complaint</option><option>Compliment</option><option>Media request</option></select><span class="error" aria-live="polite"></span></div>
+<div class="field"><label for="cmessage">Message</label><textarea id="cmessage" name="message" rows="5" data-rule="message" maxlength="500" required></textarea><span class="error" aria-live="polite"></span></div>
+<button class="btn" type="submit">Prepare Email</button></form>
+<div id="response" class="response" hidden aria-live="polite"></div></main>
+<script src="js/main.js"></script></body></html>

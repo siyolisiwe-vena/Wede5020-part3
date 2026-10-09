@@ -1,2 +1,18 @@
-# Auto detect text files and perform LF normalization
+# Normalise line endings so files look the same on Windows and Mac/Linux
 * text=auto
+
+# Treat web files as text
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.md text eol=lf
+*.xml text eol=lf
+*.txt text eol=lf
+
+# Treat images as binary (never modify them)
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.webp binary
+*.ico binary

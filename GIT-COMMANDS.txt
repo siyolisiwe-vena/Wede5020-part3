@@ -1,0 +1,8 @@
+git add css/part3.css && git commit -m "Add Part 3 stylesheet: accordion, lightbox, cards, form errors, media queries"
+git add js/main.js && git commit -m "Add JavaScript: accordion, search/filter/sort, lightbox, Leaflet map"
+git add enquiry.html && git commit -m "Build enquiry form with HTML5 + JS validation and cost/availability response"
+git add contact.html && git commit -m "Build contact form with validation and mailto email compile"
+git add features.html && git commit -m "Add features page: FAQ, events, gallery, map"
+git add robots.txt sitemap.xml && git commit -m "Add robots.txt and sitemap.xml for SEO"
+git add README.md && git commit -m "Update README changelog, screenshots and references"
+git push origin main

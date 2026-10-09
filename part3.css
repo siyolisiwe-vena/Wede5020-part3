@@ -1,0 +1,31 @@
+/* Part 3 additions - linked AFTER styles.css on every page */
+.field{margin-bottom:1rem}.field label{display:block;font-weight:600;margin-bottom:.25rem}
+.field input,.field select,.field textarea{width:100%;padding:.6rem;border:1px solid #888;border-radius:6px;font:inherit}
+.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid #f0a500}
+.error{color:#b00020;font-size:.9rem;min-height:1.1em;display:block}
+.invalid{border-color:#b00020!important}
+.response{margin-top:1rem;padding:1rem;border-left:5px solid #2e7d32;background:#e8f5e9;border-radius:6px}
+.response a.btn,.btn{display:inline-block;padding:.6rem 1.2rem;background:#0b3d62;color:#fff;border:0;border-radius:6px;cursor:pointer;text-decoration:none}
+.btn:hover{background:#145a8a}
+/* accordion */
+.accordion-btn{width:100%;text-align:left;padding:1rem;border:1px solid #ccc;background:#f4f4f4;cursor:pointer;font:inherit;font-weight:600}
+.accordion-panel{max-height:0;overflow:hidden;transition:max-height .35s ease;padding:0 1rem}
+.accordion-panel.open{padding:1rem}
+/* gallery + lightbox */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem}
+.gallery img{width:100%;height:160px;object-fit:cover;border-radius:6px;cursor:pointer;transition:transform .25s}
+.gallery img:hover{transform:scale(1.04)}
+#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:1000}
+#lightbox.show{display:flex}
+#lightbox img{max-width:90%;max-height:80vh;border-radius:6px}
+#lightbox button{position:absolute;background:#fff;border:0;font-size:1.5rem;padding:.4rem .8rem;cursor:pointer;border-radius:6px}
+#lb-close{top:1rem;right:1rem}#lb-prev{left:1rem}#lb-next{right:1rem}
+/* dynamic content */
+.toolbar{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
+.toolbar input,.toolbar select{padding:.5rem;border:1px solid #888;border-radius:6px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{border:1px solid #ddd;border-radius:8px;padding:1rem;animation:fadeIn .4s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+#map{height:360px;border-radius:8px}
+@media (max-width:768px){#map{height:280px}.toolbar{flex-direction:column}}
+@media (max-width:480px){#lightbox button{font-size:1.2rem}}
